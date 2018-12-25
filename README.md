@@ -28,7 +28,7 @@ Connect plug as the figure shown below:
 - DA0 and AD0 (for calibration)
 - DA1 and AD1 (for calibration)
 
-![](img/hardwaresetting.jpg)
+![image](img/hardwaresetting.JPG)
 
 ## calibration
 
