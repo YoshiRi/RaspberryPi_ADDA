@@ -1,11 +1,18 @@
 # What's this?
 
-DA output sending function
+DA output and AD reading using [AD/DA board](https://www.waveshare.com/wiki/High-Precision_AD/DA_Board).
+
 
 
 # Usage
 
-## make
+First follow [this wiki](https://www.waveshare.com/wiki/High-Precision_AD/DA_Board) to install requirements.
+
+I checked this program with Ubuntu MATE 16.04 on a Raspberry Pi 3.
+
+
+
+## Compile
 
 to compile, just run
 
@@ -16,6 +23,12 @@ make
 ## Hardware setup
 
 Connect plug as the figure shown below:
+- 5V and Vref
+- 5V and Vcc
+- DA0 and AD0 (for calibration)
+- DA1 and AD1 (for calibration)
+
+![](img/hardwaresetting.jpg)
 
 ## calibration
 
@@ -73,5 +86,5 @@ Normally you need sudo to access devices such as /dev/mem.
 $ sudo python python_test.py
 ```
 
-
+This test program using `subprocess` module.
 
